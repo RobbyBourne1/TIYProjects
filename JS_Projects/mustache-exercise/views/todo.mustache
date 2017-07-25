@@ -26,7 +26,18 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <!-- TODO write your HTML/Mustache here -->
+        <form>
+          <div>
+          <p>{{listName}}</p>
+          <ul>
+          {{#list}}
+          <li>
+            <input type="checkbox" href="/todo/{{item}}">
+            <label>{{item}}</label>
+          </li>
+          {{/list}}
+        </ul>
+        </form>
         </div>
       </div>
     </div>
